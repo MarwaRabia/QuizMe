@@ -1,0 +1,308 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --main-color: #2e8b57;
+  --secondary-color: #f5f5dc;
+  --secondary2-color: #daa520;
+  --section-padding: 50px;
+}
+
+/* Start component */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  /* margin-bottom: 70px; */
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Kufam", sans-serif;
+}
+/* .main-heading h2::before {
+  content: "";
+  width: 180px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  bottom: -20px;
+} */
+/*
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+} */
+/* .main-heading p {
+  width: 550px;
+  line-height: 2;
+  margin: 0 auto 100px;
+  color: #777;
+  max-width: 100%;
+} */
+
+/* End component */
+
+/* Start global rules */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Meduim */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End global rules */
+
+/* Start Header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  padding: 15px;
+  /* box-shadow: 0px 5px 10px rgb(0 0 0 /50%); */
+}
+.fa-book-open {
+  font-size: 45px;
+  color: var(--main-color);
+}
+header h1 {
+  font-family: "Kufam", sans-serif;
+  font-size: 25px;
+}
+
+.toggle-menu {
+  font-size: 30px;
+  color: var(--main-color);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .links {
+  position: relative;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
+  position: absolute;
+  min-width: 400px;
+  left: 0;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+header ul::before {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom-color: var(--main-color);
+  position: absolute;
+  top: -28px;
+  left: 10px;
+}
+
+header .links:hover ul {
+  display: block;
+}
+
+header ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+
+header ul li a:hover {
+  padding-right: 25px;
+  font-weight: bold;
+}
+
+header ul li:not(:last-child) a {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .fa-book-open {
+    font-size: 35px;
+  }
+  header h1 {
+    font-size: 20px;
+    min-width: 200px;
+  }
+  header ul {
+    min-width: 250px;
+  }
+}
+
+/* End Header */
+
+/* <!-- Start About Section --> */
+.about-section {
+  height: 80vh;
+  background-color: #2e8b57;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .intro-text {
+  /* position: absolute; */
+  left: 50%;
+  top: 50%;
+  color: white;
+}
+
+/* <!-- End AbobutSection --> */
+
+/* Start Questions */
+
+.questions {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.questions .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+}
+
+.questions .box {
+  min-width: 400px;
+  height: 400px;
+  margin-left: 20px;
+
+}
+
+.box2 {
+  width: 100%;
+  height: calc(100% - 20px);
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: 1s;
+   
+}
+.box2:hover {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+.box2 .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+   /* max-width: 100%; */
+}
+
+.box2 .front {
+  background-color: var(--secondary2-color);
+}
+.box2 .back {
+  background-color: var(--main-color);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/* End Questions */
+
+/* <!-- Start Footer --> */
+
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.footer span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* <!-- End Footer --> */
