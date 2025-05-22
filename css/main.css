@@ -1,5 +1,8 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
 :root {
   --main-color: #2e8b57;
   --secondary-color: #f5f5dc;
@@ -15,53 +18,17 @@
   text-transform: uppercase;
   font-size: 40px;
   font-weight: bold;
-  /* margin-bottom: 70px; */
+  margin-bottom: 40px;
   position: relative;
   text-transform: uppercase;
   font-family: "Kufam", sans-serif;
+  background-color: #fce9cc;
+  padding: 15px 20px;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto 30px;
 }
-/* .main-heading h2::before {
-  content: "";
-  width: 180px;
-  height: 2px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  bottom: -20px;
-} */
-/*
-.main-heading h2::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  border: 1px solid black;
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -40px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-} */
-/* .main-heading p {
-  width: 550px;
-  line-height: 2;
-  margin: 0 auto 100px;
-  color: #777;
-  max-width: 100%;
-} */
+
 
 /* End component */
 
@@ -122,8 +89,8 @@ header {
   right: 0;
   z-index: 999;
   background-color: #fff;
-  padding: 15px;
-  /* box-shadow: 0px 5px 10px rgb(0 0 0 /50%); */
+  text-align: center;
+ 
 }
 .fa-book-open {
   font-size: 45px;
@@ -151,7 +118,7 @@ header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: var(--main-color);
+  background-color: #dfdfaa;
   position: absolute;
   min-width: 400px;
   left: 0;
@@ -162,7 +129,7 @@ header ul {
 header ul::before {
   content: "";
   border: 15px solid transparent;
-  border-bottom-color: var(--main-color);
+  border-bottom-color: #dfdfaa;
   position: absolute;
   top: -28px;
   left: 10px;
@@ -177,7 +144,7 @@ header ul li a {
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--main-color);
   transition: var(--main-duration);
   -webkit-transition: var(--main-duration);
   -moz-transition: var(--main-duration);
@@ -198,6 +165,9 @@ header ul li:not(:last-child) a {
   .fa-book-open {
     font-size: 35px;
   }
+  .main-heading h2 {
+    font-size: 30px;
+  }
   header h1 {
     font-size: 20px;
     min-width: 200px;
@@ -205,24 +175,70 @@ header ul li:not(:last-child) a {
   header ul {
     min-width: 250px;
   }
+  .about-section p {
+    padding: 10px;
+    font-weight: bold;
+  }
 }
 
 /* End Header */
 
 /* <!-- Start About Section --> */
 .about-section {
-  height: 80vh;
+  height: 95vh;
   background-color: #2e8b57;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .about-section .intro-text {
   /* position: absolute; */
   left: 50%;
   top: 50%;
   color: white;
+}
+.about-section h1 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.about-section p {
+  font-size: 20px;
+  line-height: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about-section p:first-of-type {
+  margin-top: 80px;
+}
+.about-section a {
+  display: block;
+  width: fit-content;
+  background-color: var(--secondary2-color);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 100px auto 0;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: 0 5px 5px rgb(0 0 0 /40%);
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  padding: 10px 50px;
 }
 
 /* <!-- End AbobutSection --> */
@@ -230,7 +246,7 @@ header ul li:not(:last-child) a {
 /* Start Questions */
 
 .questions {
-  padding-top: var(--section-padding);
+  padding-top:30px;
   padding-bottom: var(--section-padding);
 }
 
@@ -238,14 +254,21 @@ header ul li:not(:last-child) a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 40px;
+  /* margin: 20px; */
+  /* margin: 0 20px 20px 20px; */
+  margin-top: -10px;
 }
 
 .questions .box {
-  min-width: 400px;
-  height: 400px;
+  min-width: 350px;
+  height: 370px;
   margin-left: 20px;
-
+}
+@media (max-width: 750px) {
+  .questions .box { margin-left: 0;}
+}
+.container {
+  scroll-margin-top: 80px;
 }
 
 .box2 {
@@ -254,7 +277,6 @@ header ul li:not(:last-child) a {
   transform-style: preserve-3d;
   transform-origin: right center;
   transition: 1s;
-   
 }
 .box2:hover {
   transform: translateX(-100%) rotateY(-180deg);
@@ -273,7 +295,7 @@ header ul li:not(:last-child) a {
   text-align: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-   /* max-width: 100%; */
+  /* max-width: 100%; */
 }
 
 .box2 .front {
@@ -288,20 +310,24 @@ header ul li:not(:last-child) a {
   -o-transform: rotateY(180deg);
 }
 
+.cards-container:last-of-type {
+  margin-bottom: -50px;
+}
+
 /* End Questions */
 
 /* <!-- Start Footer --> */
 
 .footer {
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   color: white;
-  padding: 30px;
-  font-size: 20px;
+  padding: 15px;
+  font-size: 15px;
   text-align: center;
-  color: black;
+  font-weight: bold;
 }
 .footer span {
-  color: var(--main-color);
+  /* color: var(--main-color); */
   font-weight: bold;
 }
 
