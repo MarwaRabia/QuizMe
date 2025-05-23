@@ -2,7 +2,8 @@
 
 # Islamic Knowledge Challenge 🕌
 
-![Project Banner](./images/ideas.png)
+![Project Banner](./images/image_1.png)
+![Project Banner](./images/image_2.png)
 
 An interactive Arabic web application that tests users' knowledge about the Quran, Prophets, and Companions through flip cards.
 
