@@ -75,7 +75,7 @@ ul {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1270px;
   }
 }
 /* End global rules */
@@ -93,16 +93,16 @@ header {
  
 }
 .fa-book-open {
-  font-size: 45px;
+  font-size: 50px;
   color: var(--main-color);
 }
 header h1 {
   font-family: "Kufam", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .toggle-menu {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--main-color);
 }
 header .container {
@@ -141,8 +141,8 @@ header .links:hover ul {
 
 header ul li a {
   display: block;
-  padding: 20px;
-  font-size: 20px;
+  padding: 30px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--main-color);
   transition: var(--main-duration);
@@ -203,8 +203,8 @@ header ul li:not(:last-child) a {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 .about-section p {
-  font-size: 20px;
-  line-height: 3.5rem;
+  font-size: 30px;
+  line-height: 6.5rem;
   font-weight: 700;
   text-align: center;
 }
@@ -217,9 +217,9 @@ header ul li:not(:last-child) a {
   background-color: var(--secondary2-color);
   color: #fff;
   border: none;
-  padding: 10px 30px;
+  padding: 15px 90px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin: 100px auto 0;
   font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -238,8 +238,13 @@ header ul li:not(:last-child) a {
 }
 
 .about-section a:hover {
-  padding: 10px 50px;
+  padding: 15px 120px;
 }
+
+@media (max-width: 750px) {
+  .questions .box { margin-left: 0;}
+}
+
 
 /* <!-- End AbobutSection --> */
 
