@@ -200,7 +200,6 @@ header ul li:not(:last-child) a {
 }
 
 .about-section .intro-text {
-  /* position: absolute; */
   left: 50%;
   top: 50%;
   color: white;
@@ -251,7 +250,7 @@ header ul li:not(:last-child) a {
   .about-section p {
     font-size: 21px;
     line-height: 4.5rem;
-    /* margin: 100px auto 0; */
+
   }
   .about-section p:first-of-type {
     margin-top: 50px;
@@ -360,7 +359,6 @@ header ul li:not(:last-child) a {
   font-weight: bold;
 }
 .footer span {
-  /* color: var(--main-color); */
   font-weight: bold;
 }
 
