@@ -16,7 +16,7 @@
 }
 .main-heading h2 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin-bottom: 40px;
   position: relative;
@@ -27,6 +27,12 @@
   width: fit-content;
   text-align: center;
   margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  .main-heading h2 {
+    font-size: 33px;
+  }
 }
 
 /* End component */
@@ -242,26 +248,21 @@ header ul li:not(:last-child) a {
 }
 
 @media (max-width: 750px) {
-
   .about-section p {
     font-size: 21px;
     line-height: 4.5rem;
     /* margin: 100px auto 0; */
   }
   .about-section p:first-of-type {
-  margin-top: 50px;
-}
-.about-section a {
-   padding: 10px 70px;
-  font-size: 23px;
-   margin: 65px auto 0;
-
-}
-.about-section a:hover {
+    margin-top: 50px;
+  }
+  .about-section a {
+    padding: 10px 70px;
+    font-size: 23px;
+    margin: 65px auto 0;
+  }
+  .about-section a:hover {
     padding: 10px 100px;
-}
-  .questions .box {
-    margin-left: 0;
   }
 }
 
@@ -278,21 +279,15 @@ header ul li:not(:last-child) a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 20px; */
-  /* margin: 0 20px 20px 20px; */
   margin-top: -10px;
 }
 
 .questions .box {
-  min-width: 350px;
-  height: 370px;
+  min-width: 450px;
+  height: 450px;
   margin-left: 20px;
 }
-@media (max-width: 750px) {
-  .questions .box {
-    margin-left: 0;
-  }
-}
+
 .container {
   scroll-margin-top: 80px;
 }
@@ -315,13 +310,12 @@ header ul li:not(:last-child) a {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   padding: 10px;
   text-align: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  /* max-width: 100%; */
 }
 
 .box2 .front {
@@ -340,6 +334,19 @@ header ul li:not(:last-child) a {
   margin-bottom: -50px;
 }
 
+@media (max-width: 750px) {
+  .questions .box {
+    min-width: 350px;
+    height: 350px;
+     margin-left: 0;
+  }
+
+  .box2 .face {
+    font-size: 30px;
+  }
+ 
+}
+
 /* End Questions */
 
 /* <!-- Start Footer --> */
@@ -347,8 +354,8 @@ header ul li:not(:last-child) a {
 .footer {
   background-color: var(--main-color);
   color: white;
-  padding: 15px;
-  font-size: 15px;
+  padding: 18px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
