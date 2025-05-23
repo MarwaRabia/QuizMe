@@ -29,7 +29,6 @@
   margin: 0 auto 30px;
 }
 
-
 /* End component */
 
 /* Start global rules */
@@ -90,7 +89,6 @@ header {
   z-index: 999;
   background-color: #fff;
   text-align: center;
- 
 }
 .fa-book-open {
   font-size: 50px;
@@ -165,9 +163,10 @@ header ul li:not(:last-child) a {
   .fa-book-open {
     font-size: 35px;
   }
-  .main-heading h2 {
-    font-size: 30px;
+  .toggle-menu {
+    font-size: 33px;
   }
+
   header h1 {
     font-size: 20px;
     min-width: 200px;
@@ -175,9 +174,10 @@ header ul li:not(:last-child) a {
   header ul {
     min-width: 250px;
   }
-  .about-section p {
-    padding: 10px;
-    font-weight: bold;
+
+  header ul li a {
+    padding: 18px;
+    font-size: 25px;
   }
 }
 
@@ -242,16 +242,35 @@ header ul li:not(:last-child) a {
 }
 
 @media (max-width: 750px) {
-  .questions .box { margin-left: 0;}
-}
 
+  .about-section p {
+    font-size: 21px;
+    line-height: 4.5rem;
+    /* margin: 100px auto 0; */
+  }
+  .about-section p:first-of-type {
+  margin-top: 50px;
+}
+.about-section a {
+   padding: 10px 70px;
+  font-size: 23px;
+   margin: 65px auto 0;
+
+}
+.about-section a:hover {
+    padding: 10px 100px;
+}
+  .questions .box {
+    margin-left: 0;
+  }
+}
 
 /* <!-- End AbobutSection --> */
 
 /* Start Questions */
 
 .questions {
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: var(--section-padding);
 }
 
@@ -270,7 +289,9 @@ header ul li:not(:last-child) a {
   margin-left: 20px;
 }
 @media (max-width: 750px) {
-  .questions .box { margin-left: 0;}
+  .questions .box {
+    margin-left: 0;
+  }
 }
 .container {
   scroll-margin-top: 80px;
